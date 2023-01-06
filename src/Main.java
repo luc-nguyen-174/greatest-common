@@ -13,15 +13,14 @@ public class Main {
         a = Math.abs(a);
         b = Math.abs(b);
         if (a == 0 || b == 0) {
-            System.out.println("No greatest common factor");
-        }
-        while (a != b) {
+            System.out.println("không có ước số chung");
+        }else while (a != b) {
             if (a > b) {
                 a = a - b;
             } else {
                 b = b - a;
             }
         }
-        System.out.println("Greatest common factor:" + a);
+        System.out.println("ước số chung lớn nhất là:" + a);
     }
 }
